@@ -1,0 +1,22 @@
+//simple interest
+
+
+#include<stdio.h>
+int main()
+{
+    float a,b,c,ANS;
+    
+    printf("Enter the number of a");
+    scanf("%f",&a);
+    
+    printf("Enter the number of b");
+    scanf("%f",&b);
+    
+    printf("Enter the number of c");
+    scanf("%f",&c);
+    
+    ANS=(a+b+c)/100;
+    printf("Simple interest is %f",ANS);
+    
+    return 0;
+}
