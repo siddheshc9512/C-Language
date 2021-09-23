@@ -1,0 +1,15 @@
+/*
+9. WAP which calculate speed for time and distance.
+Speed=(distance/time)
+*/
+#include <stdio.h>
+int main()
+{
+    float time,dist,speed;
+    printf("Enter the time :");
+    scanf("%f",&time);
+    printf("Enter the dist :");
+    scanf("%f",&dist);
+    speed=dist/time;
+    printf("\nspeed =%f",speed);
+}
