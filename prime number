@@ -1,0 +1,32 @@
+/*
+1. WAP to check whether a number is prime or not.
+*/
+
+#include <stdio.h>
+
+int main() 
+{
+int num;
+printf("\nEnter the number = ");
+scanf("%d",&num);
+int count=0;
+for(int i=2;i<num;i++)
+{
+if(num%i==0)
+count++;
+}
+if (num==1)
+{
+printf("num is composite number");
+}
+else if (count==0)
+{
+printf("num is a prime number\n");
+}
+
+else
+{
+printf("num is not a prime number");
+}
+return 0;
+}
