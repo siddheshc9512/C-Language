@@ -1,0 +1,49 @@
+/*
+7. WAP to create a simple calculator for addition, subtraction, multiplication and division using 
+switch case (Menu driven programming). If user enters operator as choice as follows
+a) + for Addition
+b) – for Subtraction
+c) * for Multiplication
+d) / for Division 
+If user enters wrong choice appropriate message should be displayed
+*/
+
+#include<stdio.h>
+int main()
+{
+	char ch;
+	int num1,num2;
+	printf("Enter your choice + for addition\n - for subtraction\n * for multiplication\n / for division");
+	scanf("%c",&ch);
+
+	switch (ch) 
+	{
+		case'+' :
+			printf("\nEnter any two number :");
+			scanf("%d %d",&num1,&num2);
+			printf("the addition of two num = %d",num1+num2);
+			break;
+		case'-' :
+			printf("\nEnter any two number :");
+			scanf("%d %d",&num1,&num2);
+			printf("the subtraction of two num = %d",num1-num2);
+			break;
+
+		case'*' :
+			printf("\nEnter any two number :");
+			scanf("%d %d",&num1,&num2);
+			printf("the multiplication of two num = %d",num1*num2);	
+			break;
+
+		case'/' :
+			printf("\nEnter any two number :");
+			scanf("%d %d",&num1,&num2);
+			printf("the division of two num = %d",num1/num2);
+			break;
+			
+		default :
+			printf("Your choice is wrong");
+
+	}
+return 0;
+}
