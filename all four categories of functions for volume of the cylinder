@@ -1,0 +1,69 @@
+*/
+1. WAP to demonstrate all four categories of functions for volume of the cylinder
+(volume of cylinder: 3.14*r*r*h)
+a) Function without parameters without return value.
+b) Function with parameter without return value.
+c) Function without parameter with return value.
+d) Function with parameters with return value.
+*/
+
+#include<stdio.h>
+#define pi 3.14
+
+void volume1()
+{
+float r,h,v;
+//printf("a) Function without parameters without return value.");
+printf("enter the radius and hight of the : ");
+scanf("%f %f",&r,&h);
+v=pi*r*r*h;
+printf("%f\n",v);
+
+}
+void volume2(float r,float h)
+{
+//printf("b) Function with parameter without return value.");
+float res,v;
+res=pi*r*r*h;
+printf("Result=%f",res);
+printf("enter the radius and hight of the : ");
+scanf("%f %f",&r,&h);
+v=pi*r*r*h;
+printf("%f\n",v);
+}
+float volume3()
+{
+float r,h,R;
+//printf("a) Function without parameters with return value.");
+printf("enter the radius and hight of the : ");
+scanf("%f %f",&r,&h);
+R=pi*r*r*h;
+return R;
+}
+
+
+
+void volume4(float r,float h)
+{
+//printf("b) Function with parameter with return value.");
+
+
+
+}
+int main()         
+{
+
+volume1();
+float r,h,v,R;
+printf("enter the radius and hight of the : ");
+scanf("%f %f",&r,&h);
+
+printf("%f/n",v);
+volume2(r,h);
+R=volume3(r,h);
+printf("volume3=%f",R);
+
+volume4(r,h);
+
+return 0;
+}
