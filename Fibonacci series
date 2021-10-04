@@ -1,0 +1,29 @@
+//  WAP to print Fibonacci series.
+
+
+#include<stdio.h>
+int fibonacci_series(int);
+int main()
+{
+int count,c=0,i;
+printf("Enter the number of terms:");
+scanf("%d",&count);
+
+printf("\n Fibonacci_series:\n");
+for(i=1;i<=count;i++)
+{
+printf("%d\n",Fibonacci_series(c));
+c++;
+}
+return 0;
+}
+
+int Fibonacci_series(int num)
+{
+if(num==0)
+return 0;
+else if(num==1)
+return 1;
+else
+return(Fibonacci_series(num-1)+Fibonacci_series(num-2));
+}
