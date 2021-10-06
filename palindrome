@@ -1,0 +1,36 @@
+/*
+5. WAP to check whether a number is palindrome.
+*/
+
+#include<stdio.h>
+int palindrome(int num)
+{
+	int temp,revesed=0,r;
+	temp = num;
+	while(num!=0)
+	{
+	r= num%10;
+	revesed=revesed*10+r;
+	num/=10;
+	}
+	if(temp==revesed)
+	{
+	printf("\nnum is palindrome");
+	}
+	else
+	{
+	printf("\n num is not palindrome");
+	}
+	return 0;
+}
+
+
+
+int main()
+{
+	int num;
+	printf("\nenter any number");
+	scanf("%d",&num);
+	palindrome(num);
+
+}
