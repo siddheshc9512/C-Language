@@ -1,0 +1,16 @@
+//Find a substring in a string.
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[20],b[20];
+	char* c;
+	printf("\n enter any 2 string");
+	gets(a);
+	gets(b);
+	c=strstr(a,b);
+	printf("\n substring %s",c);
+	return 0;
+}
+	
+	
