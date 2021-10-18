@@ -1,0 +1,36 @@
+//Create a structure Student. Create array of 10 students using MACRO and display data in tabular form
+#include<stdio.h>
+#include <string.h>
+
+struct student
+{
+int stu_id;
+char name[20];
+int marks;
+}s[10];
+
+int main()
+{
+int i;
+
+for(i=0;i<3;i++)
+{
+printf("Enter the student id : ");
+scanf("%d",&s[i].stu_id);
+
+printf("Enter the name of student : ");
+scanf("%s",&s[i].name);
+
+printf("Enter the marks : ");
+scanf("%d",&s[i].marks);
+}
+
+for(i=0;i<10;i++)
+{
+printf("student id : %d/n",s[i].stu_id);
+printf("name of student : %s/n",s[i].name);
+printf("marks of student : %d/n",s[i].marks);
+
+}
+return 0;
+}
