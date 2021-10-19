@@ -1,0 +1,15 @@
+//Demonstrate use of union and find out size of union variable and the attributes from union
+#include<stdio.h>
+union A
+{
+int a[10];     //4*10=40
+};
+
+int main()
+{
+union A var;
+
+printf("%d",sizeof(var));
+
+return 0;
+}
