@@ -1,0 +1,17 @@
+//  Subtraction without using '-'
+
+int main()
+{
+	int a,b;
+	printf("Enter any two number ");
+	scanf("%d %d",&a,&b);
+
+	while(b!=0)
+	{
+		a--;
+		b--;
+	}
+	
+	printf("The Subtraction of a-b=%d",a);
+
+}
