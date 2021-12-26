@@ -1,0 +1,38 @@
+ /*
+
+* * * * * * *
+  * * * * *
+    * * *
+      *
+*/
+
+#include <stdio.h>
+int main()
+{
+
+int i, j,R,S;
+printf("Enter the no of rows :");
+scanf("%d",&R);
+
+for (i=R;i>=1; --i)
+{
+	for(S=0;S<R-i;++S)
+	{
+		printf(" ");
+	}
+	for(j=i;j<=2*i-1;++j)
+	{
+		printf("* ");
+	}
+	for(j=0;j<i-1;++j)
+	{
+		printf("* ");
+	}
+printf("\n");
+
+}
+return 0;
+}
+
+
+
