@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+	int i=0;
+	int sum=0;
+	char name[20];
+	
+	printf("Enter  the name : ");
+	scanf("%s",name);
+
+	while((name[i])!= '\0')
+	{
+		printf("\n the ascii value of %c is %d",name[i],name[i]);
+		sum=sum+name[i];
+		i++;
+	}
+	
+	printf("\n the total sum of the ascii values is %d",sum);
+	
+	
+return 0;
+}
+
+/*
+Enter  the name : Siddhesh
+
+ the ascii value of S is 83
+ the ascii value of i is 105
+ the ascii value of d is 100
+ the ascii value of d is 100
+ the ascii value of h is 104
+ the ascii value of e is 101
+ the ascii value of s is 115
+ the ascii value of h is 104
+ the total sum of the ascii values is 812
+*/
