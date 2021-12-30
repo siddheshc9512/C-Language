@@ -1,0 +1,18 @@
+// Fibonacci Series  0 1 1 2 3 5 8
+
+#include<stdio.h>
+int main()
+{
+	int a=0,b=1,c=0,n,i;
+	printf("Enter the an number:\n");
+	scanf("%d",&n);
+
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",a);
+		c=a+b;
+		a=b;
+		b=c;
+		
+	}
+}
